@@ -1,0 +1,5 @@
+pipeline:
+  build:
+    image: busybox
+    commands:
+      - echo "Hello"
