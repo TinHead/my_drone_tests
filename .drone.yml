@@ -1,7 +1,6 @@
 pipeline:
   build:
-    image: busybox
+    image: python
     commands:
-      - echo "Hello"
-      - echo "hello again"
-      - echo "boo"
+      - env
+      - python --version
