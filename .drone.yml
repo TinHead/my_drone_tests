@@ -4,3 +4,4 @@ pipeline:
     commands:
       - echo "Hello"
       - echo "hello again"
+      - echo "boo"
