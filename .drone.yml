@@ -3,4 +3,4 @@ pipeline:
     image: python
     commands:
       - python --version
-      - echo "Hello Craig!"
+      - echo "Hello World!"
