@@ -1,6 +1,5 @@
 pipeline:
   build:
-    image: python
+    image: arm32v6/python:2.7.15-alpine3.8
     commands:
-      - python --version
       - echo "Hello World!"
