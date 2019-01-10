@@ -1,6 +1,6 @@
 platform:
   os: linux
-  architecture: arm32
+  arch: arm64
 
 pipeline:
   build:
