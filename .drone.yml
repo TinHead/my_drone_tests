@@ -12,3 +12,7 @@ steps:
       repo: tinhead/octoprint
       target: octo
       dockerfile: Dockerfile.armv6
+      username:
+        from_secret: hub_user
+      password:
+        from_secret: hub_passwds
