@@ -1,9 +1,12 @@
+kind: pipeline
+name: octoprint
+
 platform:
   os: linux
-  arch: arm64
+  arch: arm
 
-pipeline:
-  build:
+steps:
+  - name: test
     image: arm32v6/python:2.7.15-alpine3.8
     commands:
       - echo "Hello World!"
