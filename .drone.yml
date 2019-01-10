@@ -15,4 +15,4 @@ steps:
       username:
         from_secret: hub_user
       password:
-        from_secret: hub_passwds  
+        from_secret: hub_passwd 
