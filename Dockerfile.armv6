@@ -1,0 +1,9 @@
+FROM arm32v6/python:2.7.15-alpine3.8 as builder
+WORKDIR /build_octo
+RUN apk add gcc make musl-dev linux-headers; pip install https://get.octoprint.org/latest --root /build_octo
+
+
+FROM arm32v6/python:2.7.15-alpine3.8 as octo
+COPY --from=builder /build_octo/ .
+RUN adduser octo --disabled-password
+CMD ["su", "-", "octo", "-c", "/usr/local/bin/octoprint serve"]
