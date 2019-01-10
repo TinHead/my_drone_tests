@@ -9,10 +9,10 @@ steps:
   - name: docker
     image: plugins/docker:linux-arm
     settings:
-      repo: tinhead/octoprint
+      repo: tinhead/rpi_images
       target: octo
       dockerfile: Dockerfile.armv6
       username:
         from_secret: hub_user
       password:
-        from_secret: hub_passwds
+        from_secret: hub_passwds  
