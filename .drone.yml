@@ -7,7 +7,7 @@ platform:
 
 steps:
   - name: docker
-    image: plugins/docker
+    image: plugins/docker:linux-arm
     settings:
       repo: tinhead/octoprint
       target: octo
